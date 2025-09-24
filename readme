@@ -19,7 +19,6 @@ The bot automates the full cycle of the RPA Challenge by downloading the input d
 - 📧 Sends an HTML email with embedded link to the screenshot
 ##  Project Structure
 
-```sh
 └── Rpa-challange-Bot/
     ├── Browser
     │   ├── ClickOnDownloadExcelButton.xaml
@@ -41,7 +40,6 @@ The bot automates the full cycle of the RPA Challenge by downloading the input d
     │   ├── ReadDataTable.xaml
     │   └── SaveExcelFile.xaml
     └── project.json
-```
 ## 🎯 Input
 
 - **Excel file** downloaded automatically from the challenge website
