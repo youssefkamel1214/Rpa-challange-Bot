@@ -1,0 +1,64 @@
+# 🏁 RPA Challenge Bot (UiPath Project)
+
+A high-performance UiPath automation bot built to solve the **RPA Challenge**—a benchmark task for testing speed and accuracy in data entry. This bot demonstrates advanced RPA capabilities including dynamic form handling, file downloads, email automation, and cloud integration.
+
+## 📌 Project Overview
+
+The bot automates the full cycle of the RPA Challenge by downloading the input data directly from the challenge website, processing it through dynamic form fields, and submitting each record with precision. After completing the challenge, it captures a screenshot of the result, uploads it to Google Drive, and sends an HTML-formatted email containing the screenshot link.
+
+✅ **Challenge completed in just 20 seconds!**
+
+## 🚀 Features
+
+- 🌐 Navigates to the RPA Challenge website
+- 📥 Downloads the input Excel file from the site
+- 📄 Reads and matches dynamic form fields with input data
+- ⌨️ Inputs and submits each record with high accuracy
+- 📸 Captures screenshot of the final result
+- ☁️ Uploads screenshot to Google Drive
+- 📧 Sends an HTML email with embedded link to the screenshot
+##  Project Structure
+
+```sh
+└── Rpa-challange-Bot/
+    ├── Browser
+    │   ├── ClickOnDownloadExcelButton.xaml
+    │   ├── ClickOnStartButton.xaml
+    │   ├── CloseBrowser.xaml
+    │   ├── FillFormData.xaml
+    │   ├── OpenBrowserOnRPAChallange.xaml
+    │   └── TakeScreenShotOfResult.xaml
+    ├── Inputs
+    │   ├── Email Body.html
+    ├── Mail
+    │   ├── SendEmail.xaml
+    │   └── UplaodResult.xaml
+    ├── Main.xaml
+    ├── Outputs
+    │   ├── Challange Result 2025_09_18 03_02_54 AM.png
+    ├── System Activites
+    │   ├── DeleteChellangeFileIfExists.xaml
+    │   ├── ReadDataTable.xaml
+    │   └── SaveExcelFile.xaml
+    └── project.json
+```
+## 🎯 Input
+
+- **Excel file** downloaded automatically from the challenge website
+- **Execution trigger**: Manual run from UiPath Studio
+
+## 📤 Output
+
+- **Successful form submissions** on the RPA Challenge site
+- **Screenshot** of the final result uploaded to Google Drive
+- **HTML email** sent with embedded link to the screenshot
+- **Execution logs** visible in UiPath Studio
+
+## 🛠️ How to Run
+
+1. Open UiPath Studio.
+2. Clone or download this repository.
+3. Open the project folder.
+4. Run `Main.xaml`.
+5. Watch the bot complete the challenge and send the result via email.
+
